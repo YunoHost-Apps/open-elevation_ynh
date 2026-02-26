@@ -45,7 +45,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Jorl17/open-elevation/archive/677f9de1b6c1a10b48028f36e072bf8b6ba19b9e.tar.gz"
+    url = "https://github.com/evermine18/open-elevation/tree/master"
     sha256 = "508d1138f8d8ae7e9e6238630a46512d80908e5303394fff7f2d79ee09e38b54"
 
     autoupdate.strategy = "latest_github_commit"
