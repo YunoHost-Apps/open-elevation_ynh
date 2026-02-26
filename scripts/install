@@ -38,7 +38,7 @@ pushd "$install_dir"
     export C_INCLUDE_PATH=/usr/include/gdal
 
     ynh_exec_as_app python3 -m venv "$install_dir/venv"
-    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install --upgrade pip
+    ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install --upgrade pip GDAL numpy Pillow Rtree
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install --no-cache-dir -r "$install_dir/requirements.txt"
 
     ynh_safe_rm "$install_dir/.cache/pip"
