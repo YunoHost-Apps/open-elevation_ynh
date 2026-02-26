@@ -33,6 +33,10 @@ ynh_config_add --template="config.ini" --destination="$install_dir/config.ini"
 ynh_script_progression "Installing Python dependencies..."
 
 pushd "$install_dir"
+    # Needed for gdal to be able to build
+    export CPLUS_INCLUDE_PATH=/usr/include/gdal
+    export C_INCLUDE_PATH=/usr/include/gdal
+
     ynh_exec_as_app python3 -m venv "$install_dir/venv"
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install --upgrade pip
     ynh_hide_warnings ynh_exec_as_app "$install_dir/venv/bin/pip" install --no-cache-dir -r "$install_dir/requirements.txt"
