@@ -62,4 +62,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "python3, python3-venv, gdal-bin, gdal-data, gdal-plugins, libgdal-dev, libspatialindex-dev, unrar-free, bc"
+    packages = "python3, python3-dev, python3-venv, gdal-bin, gdal-data, gdal-plugins, libgdal-dev, libspatialindex-dev, unrar-free, bc"
