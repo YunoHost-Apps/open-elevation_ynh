@@ -46,7 +46,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://github.com/evermine18/open-elevation/archive/f4225eb62a0793556eac5586751fc52c3a563a35.tar.gz" 
-    sha256 = "c352e7b8a80d5415289456aa8895aee33bbc524bbd4bfff5af7e98b88de46c35"
+    sha256 = "b2774db3b7796ec2fcc2ff548832d29103ee738f76985d6cee85fcb6ad88ec41"
 
     autoupdate.strategy = "latest_github_commit"
 
