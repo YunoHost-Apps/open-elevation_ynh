@@ -10,6 +10,7 @@ test_format = 1.0
 
 [default.curl_tests]
     home.path = "/api/v1/lookup"
+    home.expect_title = "error": "\"Locations\" is required."
 
     # -------------------------------------------------------------------------------
     # EVERYTHING PAST THIS POINT IS OPTIONAL AND MOST LIKELY UNNECESSARY FOR NEW APPS
